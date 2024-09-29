@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link } from "react-router-dom";
 function NavBar() {
   return (
     <div className="navbar bg-opacity-[0%] z-50 fixed top-0 left-0 w-full">
@@ -31,11 +31,11 @@ function NavBar() {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li> <Link to={`/`}>HOME</Link></li>
+            <li><Link to={`/about`}>ABOUT</Link></li>
             <li><a href="#">REVIEWS</a></li>
             <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><Link to={`/conent`}>CONTACT</Link></li>
           </ul>
         </div>
       </div>
@@ -48,11 +48,11 @@ function NavBar() {
           className="h-7"
         />
         <ul className="menu menu-horizontal px-1 space-x-4">
-          <li><a href="#" className="text-sm font-medium text-[#c99484]">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
+          <li> <Link to={`/`}  className="text-sm font-medium text-[#c99484]">HOME</Link></li>
+          <li><Link to={`/about`}>ABOUT</Link></li>
           <li><a href="#">REVIEWS</a></li>
           <li><a href="#">VIDEOS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><Link to={`/conent`}>CONTACT</Link></li>
         </ul>
       </div>
 
